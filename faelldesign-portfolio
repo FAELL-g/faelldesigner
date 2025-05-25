@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faell Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img
+      src="https://media.discordapp.net/attachments/1340478301738631300/1375926157551210647/Novo_Projeto_19.png?ex=68341f57&is=6832cdd7&hm=8c44853081df662d9c4f704bb4deda842139c95e057cf46e17854b8b64bae26d&=&format=webp&quality=lossless&width=1014&height=571"
+      alt="Banner"
+      class="background-image"
+    />
+
+    <div class="black-box">
+      <div class="icon-text">
+        <img
+          src="https://media.discordapp.net/attachments/1340478301738631300/1375680142457835650/LOGO_1.png?ex=6833e2f8&is=68329178&hm=61d3aba85fcfa538f4e4329871ba04225ad9df68c7c3594e5ca07334481c1247&=&format=webp&quality=lossless&width=400&height=400"
+          alt="Logo Faell Studio"
+          class="logo-image"
+        />
+        <h2>FAELL STUDIO</h2>
+      </div>
+      <button onclick="window.location.href='portfolio.html'">ACESSAR PORTFÓLIO</button>
+    </div>
+
+    <div class="social-buttons">
+      <a
+        href="https://discord.gg/u4ftBMfpKt"
+        target="_blank"
+        class="social-btn"
+        aria-label="Discord"
+        ><img
+          src="https://media.discordapp.net/attachments/1340478301738631300/1376212674232320172/free-discord-logo-icon-download-in-svg-png-gif-file-formats--social-media-pack-logos-icons-3073764.png?ex=6834816e&is=68332fee&hm=434e6a9b45e95a2e7cab0b4b385f8678918b492331924e3c7c9a169e3833b27b&=&format=webp&quality=lossless&width=85&height=85"
+          alt="Discord"
+      /></a>
+      <a
+        href="https://wa.me/82999403869"
+        target="_blank"
+        class="social-btn"
+        aria-label="WhatsApp"
+        ><img
+          src="https://media.discordapp.net/attachments/1340478301738631300/1376212674500624384/free-whatsapp-logo-9289812-7573065.png?ex=6834816e&is=68332fee&hm=5e5156c274956810f4fabad67214cc85f0685ae240f75da033a49038a1da1d80&=&format=webp&quality=lossless&width=171&height=171"
+          alt="WhatsApp"
+      /></a>
+      <a
+        href="mailto:rafaelgomes8091@gmail.com"
+        target="_blank"
+        class="social-btn"
+        aria-label="Gmail"
+        ><img
+          src="https://media.discordapp.net/attachments/1340478301738631300/1376212674886762677/gmail-icon-free-png.png?ex=6834816e&is=68332fee&hm=eb62a9b33e4ecd83fb8057e19ff52561de3d90cd071cf30acab6251aa8fd559f&=&format=webp&quality=lossless&width=571&height=571"
+          alt="Gmail"
+      /></a>
+    </div>
+  </div>
+</body>
+</html>
+
+* {
+  margin: 0;
+  padding: 0;
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    overflow-y: auto; /* Isso garante o scroll */
+  }
+
+
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.8);
+  z-index: 1;
+}
+
+.black-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.icon-text img.logo-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.icon-text h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.black-box button {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 50px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+  align-self: center;
+}
+
+.black-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Social buttons */
+.social-buttons {
+  position: fixed;
+  bottom: 30px; /* ↑ Subido só um pouquinho */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 5;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.social-btn img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Faell Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .item {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .item p {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .back-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-button a {
+      color: #fff;
+      background-color: #007bff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-button a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>Portfólio - Faell Studio</header>
+
+
+
+           <h2 class="subtitulo">Logos</h2>
+
+  <div class="gallery">
+    <div class="item">
+      <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222633846378548/LOGO_5.png?ex=68348ab4&is=68333934&hm=13f51acaaae9c6c80e157fe50b840c934cc5ef0787df60b853e3f75a52a36968&=&format=webp&quality=lossless&width=571&height=571" alt="Design 1">
+      <p>Design 1</p>
+    </div>
+    <div class="item">
+      <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222632755859476/LOGO_3.png?ex=68348ab4&is=68333934&hm=7c4f723716be7325d1103d0b96bb63cacce2fe7a53e56d534ef823bf0ccd5233&=&format=webp&quality=lossless&width=571&height=571" alt="Design 2">
+      <p>Design 2</p>
+    </div>
+    <div class="item">
+      <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222633095336047/LOGO_4.png?ex=68348ab4&is=68333934&hm=6858e063a671f54743cfe18d069499495795221603db70c9c5b887b0f2d9a0eb&=&format=webp&quality=lossless&width=467&height=467" alt="Design 3">
+      <p>Design 3</p>
+    </div>
+    <div class="item">
+      <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222632051085332/LOGO_2.png?ex=68348ab4&is=68333934&hm=39293b6dc4ddf2aacd80716b7ef01be290a2a87b05ee86bd3962f60ea643fd14&=&format=webp&quality=lossless&width=571&height=571" alt="Design 4">
+      <p>Design 4</p>
+    </div>
+    <div class="item">
+      <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222453826584617/Screenshot_2025-05-25_12.35.28.png?ex=68348a89&is=68333909&hm=cf0e49dacb6b11d6a7313f1c1669a26ad4da40736f048280ac54e795a2e9e3da&=&format=webp&quality=lossless&width=221&height=218" alt="Design 5">
+      <p>Design 5</p>
+    </div>
+    <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222454866772078/Screenshot_2025-05-25_12.34.39.png?ex=68348a8a&is=6833390a&hm=7457a171d83f790f788dc4a690f56bb5e11484eab2851097e3fb6d3d8ccba035&=&format=webp&quality=lossless&width=220&height=220" alt="Design 6">
+      <p>Design 6</p>
+    </div>
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222460512440420/Screenshot_2025-05-25_12.34.02.png?ex=68348a8b&is=6833390b&hm=5ed93ab73ea65f7386f67f44640575d44ca88b8650f21f39f11154a589c45bd5&=&format=webp&quality=lossless&width=220&height=220" alt="Design 7">
+    <p>Design 7</p>
+  </div>
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222455139532952/Screenshot_2025-05-25_12.34.24.png?ex=68348a8a&is=6833390a&hm=e98ad4f5944a1cc422cc9063580af0fc8f3dbe905eb491b2475de10eef6e063d&=&format=webp&quality=lossless&width=220&height=220" alt="Design 8">
+    <p>Design 7</p>
+  </div>
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222455139532952/Screenshot_2025-05-25_12.34.24.png?ex=68348a8a&is=6833390a&hm=e98ad4f5944a1cc422cc9063580af0fc8f3dbe905eb491b2475de10eef6e063d&=&format=webp&quality=lossless&width=220&height=220" alt="Design 9">
+    <p>Design 9</p>
+  </div>
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376222454124515419/Screenshot_2025-05-25_12.35.02.png?ex=68348a8a&is=6833390a&hm=a22947dc6fe517049bf415c8dc756641d39e2ff98ebfc5de9d49c49a1974d99d&=&format=webp&quality=lossless&width=220&height=220" alt="Design 10">
+    <p>Design 10</p>
+  </div>
+    <!-- Adicione mais designs aqui -->
+  </div>
+
+  <h2 class="subtitulo">Banners</h2>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376228870876958730/Screenshot_2025-05-25_12.59.44.png?ex=68349083&is=68333f03&hm=baaa5e792fcadf1a86cd92210f6d57264ae970b45bcd278b5e65fa1f0cd2f050&=&format=webp&quality=lossless&width=445&height=250" alt="Design 1">
+    <p>Design 1</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376228870549667960/Screenshot_2025-05-25_13.00.07.png?ex=68349083&is=68333f03&hm=a95d3ee5fa76c1e0f5ed2e6379ada7a7fa4581e26de053022191f490a4178a8c&=&format=webp&quality=lossless&width=448&height=250" alt="Design 2">
+    <p>Design 2</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376228869841096795/Screenshot_2025-05-25_13.00.43.png?ex=68349083&is=68333f03&hm=017636969e548e68de020594909ef0247c75990771cc4c063e2378475cff2eb8&=&format=webp&quality=lossless&width=443&height=248" alt="Design 3">
+    <p>Design 3</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376229052544712826/Novo_Projeto_19.png?ex=683490af&is=68333f2f&hm=f15ab18b24194ca0a7f56266c1f64a028efe907d8958e6fb3da8911f8d04c72a&=&format=webp&quality=lossless&width=676&height=381" alt="Design 4">
+    <p>Design 4</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376228870256070726/Screenshot_2025-05-25_13.00.21.png?ex=68349083&is=68333f03&hm=c3e466f19cd6e32b5dab9747b20fc5a87398b7c0853bbfd203ee3a2fbd20112c&=&format=webp&quality=lossless&width=447&height=217" alt="Design 5">
+    <p>Design 5</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376228869551558816/Screenshot_2025-05-25_13.01.06.png?ex=68349083&is=68333f03&hm=addb3826d401a06057ebb8008eecaa4691b56e14cd1bbc9ba8b28992e23c0629&=&format=webp&quality=lossless&width=451&height=247" alt="Design 6">
+    <p>Design 6</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376229390081589278/image.png?ex=683490ff&is=68333f7f&hm=5d08e8b694e81c850e40af0b9ba67f3e32f09c2f840fc2ff370f285a18a666f8&=&format=webp&quality=lossless&width=446&height=249" alt="Design 7">
+    <p>Design 7</p>
+  </div>
+
+  <img src="https://media.discordapp.net/attachments/1340478301738631300/1376229390425526313/image.png?ex=683490ff&is=68333f7f&hm=8c16eb605849516055573d18c87ae4495b1257717967c229e090cc56d5515267&=&format=webp&quality=lossless&width=448&height=249" alt="Design 8">
+    <p>Design 8</p>
+  </div>
+
+
+
+  <div class="back-button">
+    <a href="index.html">Voltar ao Inicio</a>
+  </div>
+</body>
+</html>
