@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <img
-      src="https://media.discordapp.net/attachments/1340478301738631300/1375926157551210647/Novo_Projeto_19.png?ex=68341f57&is=6832cdd7&hm=8c44853081df662d9c4f704bb4deda842139c95e057cf46e17854b8b64bae26d&=&format=webp&quality=lossless&width=1014&height=571"
+      src="imagens/banner3.png"
       alt="Banner"
       class="background-image"
     />
