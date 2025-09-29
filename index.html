@@ -1,60 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Faell Studio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil・Faelzinxz</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="shortcut icon" href="IMGS/avatar.png" type="image/x-icon">
 </head>
 <body>
-  <div class="container">
-    <img
-      src="imagens/banner3.png"
-      alt="Banner"
-      class="background-image"
-    />
-
-    <div class="black-box">
-      <div class="icon-text">
-        <img
-          src="imagens/icon1.png"
-          alt="Logo Faell Studio"
-          class="logo-image"
-        />
-        <h2>FAELL STUDIO</h2>
-      </div>
-      <button onclick="window.location.href='portfolio.html'">ACESSAR PORTFÓLIO</button>
-    </div>
-
-    <div class="social-buttons">
-      <a
-        href="https://discord.gg/u4ftBMfpKt"
-        target="_blank"
-        class="social-btn"
-        aria-label="Discord"
-        ><img
-          src="imagens/icondc.png"
-          alt="Discord"
-      /></a>
-      <a
-        href="https://wa.me/82999403869"
-        target="_blank"
-        class="social-btn"
-        aria-label="WhatsApp"
-        ><img
-          src="imagens/iconwapp.png"
-          alt="WhatsApp"
-      /></a>
-      <a
-        href="mailto:rafaelgomes8091@gmail.com"
-        target="_blank"
-        class="social-btn"
-        aria-label="Gmail"
-        ><img
-          src="imagens/icongmail.png"
-          alt="Gmail"
-      /></a>
+  <!-- Tela de entrada -->
+  <div class="entry-screen" id="entryScreen">
+    <div class="entry-content">
+      <h1>FAELZINXZ - CLIQUE PARA ENTRAR</h1>
     </div>
   </div>
+
+  <!-- Conteúdo principal -->
+<div class="main-content" id="mainContent">
+    <img src="IMGS/media/bg.png" id="bg-video" alt="Fundo">
+
+    <audio id="bgAudio" loop autoplay>
+      <source src="IMGS/media/ilove.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="overlay"></div>
+
+    <div class="profile-card">
+      <!-- Mensagem acima do avatar -->
+      <div class="top-message">
+        <p>"Ainda que as dificuldades tentem me derrubar e minhas forças se esgotem, Deus é minha esperança, Ele é tudo o que preciso para seguir adiante."</p>
+      </div>
+
+      <!-- Avatar -->
+      <div class="avatar">
+        <img src="IMGS/avatar.png" alt="Avatar do usuário" />
+      </div>
+
+      <div class="info">
+        <div class="top">
+          <h1>faelzinxz_.</h1>
+          <!-- Insígnias clicáveis -->
+          <div class="badges-container">
+            <div class="badges">
+              <img src="IMGS/icons/hypersquad.png" alt="Hypersquad" title="HyperSquad" />
+              <img src="IMGS/icons/dev.png" alt="Dev" title="Desenvolvedor" />
+              <img src="IMGS/icons/quest.png" alt="Quest" title="Missão" />
+              <img src="IMGS/icons/orbs.png" alt="Orbs" title="Orbs" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bio" id="typewriterText"></div>
+
+        <!-- Seção GitHub -->
+        <div class="github-section">
+          <div class="github-info">
+            <span class="github-name">Portfólio Designer</span>
+            <div class="github-stats">
+            </div>
+            <button class="github-btn" onclick="window.open('https://faell-g.github.io/faelldesigner/portfolio.html', '_blank')">Acessar</button>
+          </div>
+        </div>
+
+        <!-- Links sociais -->
+        <div class="social-links">
+          <a href="https://discord.gg/u4ftBMfpKt" target="_blank">
+            <img src="IMGS/icons/discord.png" alt="Discord" title="Discord" />
+          </a>
+          <a href="https://open.spotify.com/user/31iwyo3t2ko7xqce2ppbas45bldu?si=882320871dc04ee6" target="_blank">
+            <img src="IMGS/icons/spotify.png" alt="Spotify" title="Spotify" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Visualizações -->
+      <div class="views">
+        <img src="IMGS/flaviicons/olho.png" alt="Visualizações" class="view-icon">
+        <span id="viewCount">0</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
